@@ -1,0 +1,398 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Edu QLD Beginner', cursive; 
+     font-family: 'Merriweather', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: black;
+    color: white;
+}
+
+/* !header */
+header {
+    background-color: black;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.navmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.button-a{
+    padding: 1rem 0.5rem;
+    font-size: 0.6rem;
+    /* padding: 1rem; */
+    background: transparent;
+    /* color: white; */
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 50px;
+    border: solid white 1px;
+    color: gold;
+}
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+
+    }
+
+    .navmenu {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #1111116b;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .navmenu.active {
+        left: 0;
+
+    }
+}
+
+@media(width:414px) {
+    .navmenu {
+        top: 95px;
+    }
+}
+
+/* ** Main section */
+.img-irfan {
+    width: 100%;
+    height: 600px;
+}
+/* section 1 */
+.top-1{
+    padding: 5rem;
+    display: flex;
+} 
+.img-1{
+    width: 30rem;
+    border-radius: 50px;
+    border: transparent;
+}  
+.top-h{
+    display: block;
+    padding: 1rem;
+}
+.top1-2{
+    display: flex;
+    padding: 0.1rem 0;
+    align-items: center;
+}
+.top1-2>h2{
+    padding: 0.8rem 0;
+}
+.button-1{
+    padding: 0 4rem ;
+}
+.button-1 > button{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 0 0.1rem;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.para-1{
+    font-weight: 500;
+
+}
+
+/* section 2 */
+.top-2{
+    padding: 3rem 6rem;
+    display: flex;
+    color: black;
+    background: white;
+}
+.top2-para{
+    text-align: left;
+}
+.top2-para{
+padding: 1.2rem 0px;
+}
+.golden-star{
+    color: gold;
+    
+}
+
+.fa-star{
+   cursor: pointer;
+}
+.span-set{
+    text-align: center;
+    text-align: center;
+}
+.para-4{
+    text-align: left;
+    align-items: center;
+}
+
+/* section 3 */
+.top-3{
+    display: flex;
+    padding: 3rem 6rem;
+    font-size: 1.5em;
+    font-weight: 700;
+    justify-content: space-between;
+}
+/* section4 */
+.top-4{
+    font-size: 1rem;
+    padding: 5rem 6rem;
+    background: white;
+    color: black;
+}
+
+.top4-q1{
+    padding: 0.5rem 0;
+}
+.top4-h1>h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.top4-p1{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-style: italic;    
+    font-weight: 600;
+}
+
+.computer-img{
+    width: 10rem;
+border-radius: 50px;
+border: black solid 1px;
+cursor: pointer;
+}
+.top3-para{
+    padding: 0.5rem;
+}
+.top3-ul{
+    padding: 0.5rem 0;
+}
+.idealuse{
+    display: inline-flex;
+}
+
+
+.top-30{
+    display: flex;
+    padding: 3rem 6rem;
+    font-size: 1.5em;
+    font-weight: 700;
+    justify-content: space-between;
+}
+
+.pros{
+    padding: 0.5rem; 
+}
+
+.top4-image{
+    width: 15rem;
+border-radius: 30px;
+padding-right: 2rem;
+}
+
+.top4-u1{
+display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.aa1{
+    padding: 6rem 0;
+}
+
+.top4image{
+    border-radius: 10px;
+}
+.top4image{
+    width: 20rem;
+}
+
+.gg1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 1.5rem;
+    
+}
+.common{
+    display: flex;
+    justify-content:space-between;
+}
+.common-icons{
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0 0.5rem;
+}
+.facebook{
+    color: rgb(255, 255, 255);
+}
+.instagram{
+    color: rgb(255, 255, 255);
+}
+.amazon{
+    color: rgb(255, 255, 255);
+}
+.facebook:hover{
+    color: blue;
+}
+.instagram:hover{
+    color: rgba(255, 14, 54, 0.793);
+}
+.amazon:hover{
+    color: rgb(48, 48, 48);
+}
+.copyright{
+    text-align: center;
+    font-weight: 800;
+}
+
+@media (max-width:900px) {
+    .img-1{
+        max-width: 20em;
+    }
+    .button-a{
+        font-size: 0.7rem;
+        padding: 0 2rem;
+}
+    
+}
+@media (max-width:730px) {
+    .img-1{
+        max-width: 15em;
+    }
+    .respon-img{
+max-width: 5rem;
+    }
+  .button-a{
+    text-align: center;
+    align-items: center;
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+}
+   
+}
+
+
+@media (max-width:630px) {
+    *{
+        font-size: 0.8rem;
+    }
+    .img-1{
+    max-width: 10em;
+    border-radius: none;
+    border-radius: 10px;
+}
+.button-1{
+    padding: 0 1rem;
+}
+.button-a{
+        font-size: 0.8rem;
+        align-items: center;
+        text-align: center;
+}
+}
+    
+@media (max-width:420px) {
+.computer-img{
+    max-width: 5rem;
+}
+.button-a{
+    text-align: center;
+    align-items: center;
+        font-size: 0.5rem;
+        padding: 0.5rem 1rem;
+}
+.top4-image{
+    max-width: 8.5rem;
+}
+.top4image{
+    max-width: 6rem;
+}
+}
